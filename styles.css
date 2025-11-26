@@ -34,6 +34,7 @@ a, p, h3, h4 {
     background-color: var(--sidebar-color);
     margin-left: auto;
     margin-right: 0;
+    height: 100%;
 }
 .main-content {
     margin-top:3%;
@@ -66,7 +67,7 @@ a, p, h3, h4 {
     margin-right: 5%;
 
 }
-
+/* Hey you found me 🦆*/
 .text-header-relocate {
     padding-right: 6%;
 }
@@ -82,6 +83,20 @@ a, p, h3, h4 {
     justify-content: space-between; 
 }
 
-.not-modified {
-    background-color: rgb(187, 201, 120);
+@media print {
+    body {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+    .page {
+        box-shadow: none;
+        margin: 0;
+        width: var(--page-width);
+        height: var(--page-height);
+    }
+    @page {
+        size: A4;
+        margin: 0;
+    }
 }
