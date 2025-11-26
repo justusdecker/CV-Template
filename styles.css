@@ -1,22 +1,42 @@
+:root {
+    /* Set page-size to DIN A4 standard */
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --page-color: white;
+
+    /*  Sidebar related variables */
+    --sidebar-size: 30%;
+    --sidebar-color: #252525;
+    --sidebar-text-color: white;
+
+    --normal-text-color: black;
+}
+body {
+    background-color: #342424;
+}
+
+a, p, h3, h4 {
+    color: var(--normal-text-color);
+}
+
 .page {
-    width: 210mm;
-    height: 297mm;
-    background-color:white;
+    width: var(--page-width);
+    height: var(--page-height);
+    background-color:var(--page-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: grid;
 }
+
 .sidebar {
-    width: 30%;
-    min-width: 30%;
+    width: var(--sidebar-size);
+    min-width: var(--sidebar-size);
     height: inherit;
-    background-color:#252525;
+    background-color: var(--sidebar-color);
     margin-left: auto;
     margin-right: 0;
 }
-.header-color {
-    color:#252525;
-}
 .main-content {
+    margin-top:3%;
 }
 .wrapper { 
     /* 
@@ -27,13 +47,15 @@
     flex-direction: row-reverse;
     padding-left: 4%;
 }
+
 .text-wrap {
     padding-right: 5%;
 }
+
 .borderline-spacer {
     vertical-align: bottom;
     padding-bottom: 1%;
-    font-weight: 600;
+    
     border: none;
     border-left: 0;
     border-right: 0;
@@ -44,22 +66,22 @@
     margin-right: 5%;
 
 }
-.bold-head {
-    font-weight: 600;
-    font-size: large;
-    vertical-align: bottom;
+
+.text-header-relocate {
     padding-right: 6%;
 }
+
+.bold-head {
+    font-weight: 600;
+}
+
 .title-aligner {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
 }
+
 .not-modified {
     background-color: rgb(187, 201, 120);
-}
-
-p, .borderline-spacer, h3,h4 {
-    color: black
 }
