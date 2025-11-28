@@ -10,24 +10,27 @@
     --sidebar-title-one-color: white;
     --sidebar-title-two-color: #ddd;
     --sidebar-text-color: #ccc;
-
+    /* The spacing of the right side of the sidebar */
+    --sidebar-space-right: 0.5%; 
     --normal-text-color: black;
+
+    --title-two-line-height: .85;
+    --title-one-line-height: .5;
+    --normal-line-height: .9;
 }
 body {
     background-color: #342424;
     font-family: monospace;
 }
 
-a, p, h3, h4 {
-    color: var(--normal-text-color);
-}
+a, p, h3, h4 { color: var(--normal-text-color); }
 
-div {
-    line-height: .85;
-}
-a, p {
-    line-height: 1;
-}
+/* Line spacings */
+div { line-height: var(--title-two-line-height); }
+
+a, p { line-height: var(--normal-line-height); }
+
+h3, h4 { line-height: var(--title-one-line-height); }
 
 .page {
     width: var(--page-width);
@@ -43,13 +46,11 @@ a, p {
     height: inherit;
     background-color: var(--sidebar-color);
     margin-left: auto;
-    margin-right: 0;
+    margin-right: var(--sidebar-space-right);
     height: 100%;
 }
 
-.sidebar-mtr {
-    margin-left: 4%;
-}
+.sidebar-mtr { margin-left: 4%; }
 
 .sidebar-title-one { color: var(--sidebar-title-one-color); }
 
@@ -74,7 +75,7 @@ a, p {
 
 .borderline-spacer {
     vertical-align: bottom;
-    padding-bottom: 1%;
+    padding-bottom: 1.5%;
     
     border: none;
     border-left: 0;
@@ -89,13 +90,13 @@ a, p {
 
 .borderline-spacer-sidebar {
     vertical-align: bottom;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     margin-left: 4%;
     border: none;
     border-left: 0;
     border-right: 0;
     border-top: 0;
-    border-bottom: 0.75mm;
+    border-bottom: 0.25mm;
     border-style: solid;
     border-color: var(--sidebar-title-one-color);
     margin-right: 5%;
