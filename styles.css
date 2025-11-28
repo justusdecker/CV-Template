@@ -7,7 +7,9 @@
     /*  Sidebar related variables */
     --sidebar-size: 30%;
     --sidebar-color: #252525;
-    --sidebar-text-color: #ddd;
+    --sidebar-title-one-color: white;
+    --sidebar-title-two-color: #ddd;
+    --sidebar-text-color: #ccc;
 
     --normal-text-color: black;
 }
@@ -45,15 +47,16 @@ a, p {
     height: 100%;
 }
 
-.sidebar-text-color {
-    color: var(--sidebar-text-color);
-    border-color: var(--sidebar-text-color);
-    
+.sidebar-mtr {
+    margin-left: 4%;
 }
 
-.main-content {
-    margin-top:3%;
-}
+.sidebar-title-one { color: var(--sidebar-title-one-color); }
+
+.sidebar-title-two { color: var(--sidebar-title-two-color); }
+
+.sidebar-text { color: var(--sidebar-text-color); }
+
 .wrapper { 
     /* 
     Main Content on the left & sidebar on the right.
@@ -64,8 +67,9 @@ a, p {
     padding-left: 4%;
 }
 
-.text-wrap {
+.better-text-view {
     padding-right: 5%;
+    line-height: 1.4;
 }
 
 .borderline-spacer {
@@ -93,24 +97,17 @@ a, p {
     border-top: 0;
     border-bottom: 0.75mm;
     border-style: solid;
-    border-color: white;
+    border-color: var(--sidebar-title-one-color);
     margin-right: 5%;
 
 }
 
-.sidebar-text {
-    color: #dddd;
-    margin-left: 4%;
-}
-
 /* Hey you found me 🦆*/
-.text-header-relocate {
-    padding-right: 6%;
-}
+.text-header-relocate { padding-right: 6%; }
 
-.bold-head {
-    font-weight: 600;
-}
+.more-weight { font-weight: 600; }
+
+.mo-topspace { margin-top: 3%; }
 
 .title-aligner {
     display: flex;
@@ -122,10 +119,13 @@ a, p {
 #profile-and-header-align {
     display: flex;
     flex-direction: row;
-
 }
 
 @media print {
+    /* 
+    Printing optimization 
+    Removes the unnessesary stuff you dont want
+    */
     body {
         background: none;
         padding: 0;
