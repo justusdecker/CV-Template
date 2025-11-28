@@ -7,16 +7,24 @@
     /*  Sidebar related variables */
     --sidebar-size: 30%;
     --sidebar-color: #252525;
-    --sidebar-text-color: white;
+    --sidebar-text-color: #ddd;
 
     --normal-text-color: black;
 }
 body {
     background-color: #342424;
+    font-family: monospace;
 }
 
 a, p, h3, h4 {
     color: var(--normal-text-color);
+}
+
+div {
+    line-height: .85;
+}
+a, p {
+    line-height: 1;
 }
 
 .page {
@@ -36,6 +44,13 @@ a, p, h3, h4 {
     margin-right: 0;
     height: 100%;
 }
+
+.sidebar-text-color {
+    color: var(--sidebar-text-color);
+    border-color: var(--sidebar-text-color);
+    
+}
+
 .main-content {
     margin-top:3%;
 }
@@ -67,6 +82,27 @@ a, p, h3, h4 {
     margin-right: 5%;
 
 }
+
+.borderline-spacer-sidebar {
+    vertical-align: bottom;
+    padding-bottom: 1%;
+    margin-left: 4%;
+    border: none;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0.75mm;
+    border-style: solid;
+    border-color: white;
+    margin-right: 5%;
+
+}
+
+.sidebar-text {
+    color: #dddd;
+    margin-left: 4%;
+}
+
 /* Hey you found me 🦆*/
 .text-header-relocate {
     padding-right: 6%;
@@ -81,6 +117,12 @@ a, p, h3, h4 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; 
+}
+
+#profile-and-header-align {
+    display: flex;
+    flex-direction: row;
+
 }
 
 @media print {
