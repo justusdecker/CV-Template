@@ -8,8 +8,8 @@ The CV Template contains:
 * [x] The Summary
 * [x] Projects
 * [x] Experience
-* [ ] Education
-* [ ] A place for your picture
+* [x] Education
+* [x] A place for your picture(`512x512px`)
 * [x] The Sidebar
     * [x] Profiles
     * [x] Technical Skills
@@ -22,3 +22,6 @@ The CV Template contains:
 Some minor problems exist, some of them are:
 * [x] The spacing between lines is too wide(I will add a new setting for that.)
 * [ ] The sidebar should stop about 2% before the width
+* [ ] The spacing for borderline-spacer is slightly of
+* [x] Title elements in the sidebar should be slightly brighter than normal elements
+* The Profile elements are slightly of to the right(margin)
