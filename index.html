@@ -10,34 +10,34 @@
     <div class="page">
         <div class="wrapper">
             <div class="sidebar">
-                <div class="borderline-spacer-sidebar sidebar-text-color" style="margin-top:4%;">Profiles</div>
+                <div class="borderline-spacer-sidebar sidebar-text-color" style="margin-top:8%;">Profiles</div>
                 <div class="sidebar-text bold-head" style="margin-top:4%;"><a class="sidebar-text" href="https://github.com/justusdecker">GitHub</a>,<a class="sidebar-text" href="https://www.linkedin.com/in/justus-decker">LinkedIn</a></div>
 
                 <div class="borderline-spacer-sidebar sidebar-text-color" style="margin-top:4%;">Technical Skills</div>
                 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Programming Languages</div>
-                <div class="skill-aligner"><p class="sidebar-text">Python, Java, C</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ coding_languages }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Web Development</div>
-                <div class="skill-aligner"><p class="sidebar-text">HTML, CSS, javascript, jinja</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ web_development }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Frameworks & Libraries</div>
-                <div class="skill-aligner"><p class="sidebar-text">Flask, tkinter, win32api, selenium, sqlite3, pytest</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ frameworks }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Databases</div>
-                <div class="skill-aligner"><p class="sidebar-text">SQLite, SQLAlchemy</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ databases }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Project & Development Tools</div>
-                <div class="skill-aligner"><p class="sidebar-text">Git, GitHub, Git Actions</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ tools }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">OS</div>
-                <div class="skill-aligner"><p class="sidebar-text">Windows, Linux, Mac OS X, WSL Ubuntu</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ os }}</p></div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Other</div>
-                <div class="skill-aligner"><p class="sidebar-text">OOP</p></div>
+                <div class="skill-aligner"><p class="sidebar-text">{{ other }}</p></div>
                 
                 <div class="borderline-spacer-sidebar sidebar-text-color" style="margin-top:4%;">Soft Skills</div>
-
+                <!--Will be replaced by a for-loop at the end of development-->
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Problem-solving</div>
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Teamwork</div>
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Communication</div>
@@ -45,36 +45,36 @@
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Fast learner</div>
 
                 <div class="borderline-spacer-sidebar sidebar-text-color" style="margin-top:4%;">Languages</div>
-
+                <!--Will be replaced by a for-loop at the end of development-->
                 <div class="sidebar-text bold-head" style="margin-top:4%;">German</div>
                 <div class="sidebar-text bold-head" style="margin-top:4%;">Native</div>
 
                 <div class="sidebar-text bold-head" style="margin-top:4%;">English</div>
                 <div class="sidebar-text bold-head" style="margin-top:4%;">B2</div>
             </div>
-            <div class="main-content">
+            <div class="main-content" style="margin-top:3%;">
 
                 <div id="profile-and-header-align">
                     <img src="profile.png" alt="" width="90em">
                     <div style="margin-left: 5%;">
-                        <h3>[NAME]</h3>
-                        <h4>[JOB_TITLE]</h4>
-                        <p>Berlin, Germany <a href="tel:None">Phone Number</a> <a href="mailto:yomama">Mail</a></p> <!--Wrong spacing, padding(top, left)-->
+                        <h3>{{ name }}</h3>
+                        <h4>{{ job_title }}</h4>
+                        <p>{{ city }}, {{ country }} <a href="tel:{{ phone }}">{{ phone }}</a> <a href="mailto:{{ mail }}">{{ mail }}</a></p>
                     </div>
                 </div>
                 
             
                 <div id="summary">
                     
-                    <div class="borderline-spacer">Summary</div>
+                    <div class="borderline-spacer bold-head" style="margin-top:3%;">Summary</div>
                     <div>
-                        <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                        <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
                     </div>
                 </div>
 
                 <div id="projects">
                     <div id="first-project">
-                        <div class="borderline-spacer">Projects</div>
+                        <div class="borderline-spacer bold-head" style="margin-top:3%;">Projects</div>
                         <div>
                             <div class="title-aligner">
                                 <p class="bold-head text-header-relocate">[PROJECT_TITLE]</p>
@@ -83,13 +83,13 @@
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">GitHub Repository</a>
                             <ul>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                             </ul>
                         </div>
@@ -101,13 +101,13 @@
                             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">GitHub Repository</a>
                             <ul>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                             </ul>
                         </div>
@@ -120,10 +120,9 @@
     <div class="page" style="margin-top:1%;">
         <div class="wrapper">
             <div class="sidebar"></div>
-            <div class="main-content">
+            <div class="main-content" style="margin-top:3%;">
                 <div id="experience">
                     <div id="first-project">
-
                         <div class="borderline-spacer bold-text">Experience</div>
                         <div>
                             <div class="title-aligner">
@@ -137,10 +136,10 @@
                             </div>
                             <ul>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                             </ul>
                         </div>
@@ -162,10 +161,10 @@
                             </div>
                             <ul>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                                 <li>
-                                    <p class="text-wrap">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
+                                    <p class="better-text-view">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,</p>
                                 </li>
                             </ul>
                         </div>
