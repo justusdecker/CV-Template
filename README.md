@@ -16,5 +16,9 @@ The CV Template contains:
     * [x] Softskills
     * [x] Languages
 * [x] A duck
-* [ ] Replaced placeholders by jinja placeholders
-* [ ] A python script that will convert the `index.html` based on the given `settings.json` to the finished html.
+* [x] Replaced placeholders by jinja placeholders
+* [ ] A python script that will convert the `index.html` based on the given `cvc class` to the finished html.
+
+## Preview(Not finished yet)
+![](./demo/cv1_old.png)
+![](./demo/cv2_old.png)
