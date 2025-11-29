@@ -1,4 +1,4 @@
-# CV-Template(WIP)
+# CV-Template
 
 A modern CV Template with a sidebar to show your profiles, technical skills, softskills & languages that can be automated(The tools for that are also included [look here](#the-cv-template-contains)).
 
