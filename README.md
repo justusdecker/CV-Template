@@ -1,6 +1,6 @@
 # CV-Template(WIP)
 
-A modern CV Template with a sidebar to show your profiles, technical skills, softskills & languages.
+A modern CV Template with a sidebar to show your profiles, technical skills, softskills & languages that can be automated(The tools for that are also included [look here](#the-cv-template-contains)).
 
 This is a subproject for the [ApplicationManager](https://github.com/justusdecker/Application-Manager)
 
