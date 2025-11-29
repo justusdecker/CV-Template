@@ -1,4 +1,5 @@
-from src.sidebar_related import *
+from src.objects import *
+
 class CVC:
     NAME = "John Doe"
     PROFESSION = "Developer"
@@ -6,7 +7,7 @@ class CVC:
     COUNTRY = "Germany"
     PHONE_NUMBER = "+49abcxyz"
     MAIL = "john.doe@xyz.com"
-    SUMMARY_CONTENT = "This is my summary"
+    SUMMARY_CONTENT = "This is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summaryThis is my summary"
     SIDEBAR_ELEMENTS = [
         Head('Profiles'),
             Links(['xyz.de','xyz.en'], ['GitHub', 'LinkedIn']),
@@ -37,6 +38,31 @@ class CVC:
             Title('English'),
                 Content('B2'),
     ]
-    PROJECTS = []
-    EDUCATION = []
-    EXPERIENCE = []
+    PROJECTS = [
+        Project('Test', '2024 - 2025', '#nope', 'GitHub Repository', 
+                [
+                    Bulletpoint('ABC'),
+                    Bulletpoint('DEF'),
+                    Bulletpoint('GHI')
+                ]),
+        Project('This repo', '2023 - 2024', '#nope', 'GitHub Repository', 
+                [
+                    Bulletpoint('KLM'),
+                    Bulletpoint('NOP'),
+                    Bulletpoint('QRS')
+                ])
+    ]
+    EDUCATION = [
+        EducationOrExperience('School', '2006 - 2015', 'Student', 'Berlin, Germany',
+                              [
+                                  Bulletpoint('This is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpointThis is a bulletpoint'),
+                                  Bulletpoint('me too')
+                              ])
+    ]
+    EXPERIENCE = [
+        EducationOrExperience('Job', '2016 - 2022', 'Developer', 'Berlin, Germany',
+                              [
+                                  Bulletpoint('This is a bulletpoint'),
+                                  Bulletpoint('me too')
+                              ])
+    ]
